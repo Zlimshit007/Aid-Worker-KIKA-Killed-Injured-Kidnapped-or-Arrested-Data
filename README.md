@@ -1,2 +1,72 @@
-# Aid-Worker-KIKA-Killed-Injured-Kidnapped-or-Arrested-Data
+# Aid Worker KIKA(Killed, Injured, Kidnapped, or Arrested) Data set
 This dataset contains agency- and publicly-reported data for events in which an aid worker was killed, injured, kidnapped, or arrested, Categorized by country.
+# Methodology
+The Insecurity Insight data resource includes incidents where an aid worker was reportedly killed or injured by the use of violence (but not by illness or in an accident), kidnapped, or arrested for any reason (KIKA).
+It is compiled from two categories of sources:
+- verified security incidents submitted to Insecurity Insight by Aid in Danger partner agencies; and
+- open-source-reported incidents identified by Insecurity Insight and published in the Aid in Danger News Brief.
+
+Incidents are categorised by date, geographical location (including geocodes), number of aid workers affected, who they worked for and, if available, what type of programme their aid agency provided, as well as available information on the reported perpetrator(s)/actor(s) and weapon(s) used.
+It does not include information on the actor(s) intentions or assign a classification indicating the nature of an attack, such as whether it was an ambush or aerial bombardment, for example.
+## Codebook
+Each row represents information on an individual incident. For cases where the number of aid workers is unspecified, one is counted.
+- Date: The reported date on which the incident occurred.
+- Country: The country in which the incident occurred.
+- Country ISO3: The ISO country code for the country in which the incident occurred.
+- Admin 1: The admin 1 name of the place where the incident occurred. This is automatically generated based on the incident’s geocoding and geoprecision information.
+- Incident description: A generic and brief description of the incident.
+- Latitude: The latitude code for the place where the incident occurred. This is automatically generated based on the incident’s geocoding and geoprecision information.
+- Longitude: The longitude code for the place where the incident occurred.
+- Location of incident: The type of location where the incident occurred.
+- Actor: The classification of the perpetrator(s) reportedly responsible for the incident.
+- Actor name: The name of the actor reportedly responsible for the incident.
+- Weapon carried/used: The type of weapon carried or used by the perpetrator when the incident occurred.
+- Organisation affected: The classification of the organisation(s) affected in the incident.
+- Programme focus: The category to describe the type of programme affected by the incident.
+- Aid workers killed: Sum of aid workers reportedly killed in the incident. Note: This count includes kidnapped aid workers killed while in captivity.
+- Aid workers killed in captivity: Sum of aid workers reportedly killed while in captivity, or during a rescue mission or an attempted escape.
+- International aid workers killed: Sum of international aid workers reportedly killed in the incident.
+- International aid workers killed in captivity: Sum of international aid workers reportedly killed while in captivity, or during a rescue mission or an attempted escape.
+- National aid workers killed: Sum of national aid workers reportedly killed in the incident.
+- National aid workers killed in captivity: Sum of national aid workers reportedly killed while in captivity, during a rescue mission or during an attempted escape.
+- Male aid workers killed: Sum of male aid workers reportedly killed in the incident.
+- Male aid workers killed in captivity: Sum of male aid workers reportedly killed while in captivity, or during a rescue mission or an attempted escape.
+- Female aid workers killed: Sum of female aid workers reportedly killed in the incident.
+- Female aid workers killed in captivity: Sum of female aid workers reportedly killed while in captivity, or during a rescue mission or an attempted escape.
+- Aid workers kidnapped: Sum of aid workers reportedly kidnapped in the incident.
+- Known kidnapping/arrest outcome: The known status of aid workers reportedly kidnapped or arrested.
+- International aid workers kidnapped: Sum of international aid workers reportedly kidnapped in the incident.
+- National aid workers kidnapped: Sum of national aid workers reportedly kidnapped in the incident.
+- Male aid workers kidnapped: Sum of male aid workers reportedly kidnapped in the incident.
+- Female aid workers kidnapped: Sum of female aid workers reportedly kidnapped in the incident.
+- Aid workers arrested: Sum of aid workers reportedly arrested in the incident. Includes: arrested, charged, detained, fined or imprisoned.
+- International aid workers arrested: Sum of international aid workers reportedly arrested in the incident.
+- National aid workers arrested: Sum of national aid workers reportedly arrested in the incident.
+- Male aid workers arrested: Sum of male aid workers reportedly arrested in the incident.
+- Female aid workers arrested: Sum of female aid workers reportedly arrested in the incident.
+- Aid workers injured: Sum of aid workers reportedly injured in the incident.
+- International aid workers injured: Sum of international aid workers reportedly injured in the incident.
+- National aid workers injured: Sum of national aid workers reportedly injured in the incident.
+- Male aid workers injured: Sum of male aid workers reportedly injured in the incident.
+- Female aid workers injured: Sum of female aid workers reportedly injured in the incident.
+- SiND incident ID: The incident number in the Security in Numbers Database (SiND).
+
+# Tools Used
+
+The following tools were used for this project:
+
+- Excel worksheet
+- Python
+- Mysql
+- Power BI
+
+***
+## PYTHON FOR EXPLORATORY DATA ANALYSIS (EDA), DATA CLEANING, AND SORTING
+The dataset used for the analysis contained 929 rows × 45 columns. Exploratory Data Analysis (EDA) was done on the data to get a better understanding and insight of the dataset, We need to perform some data cleaning before we can start analyzing the dataset. This involves dropping irrelevant columns, renaming columns, handling missing values, and converting data types, the result was written back to a csv file named 'aid_workers_kika_df'.
+below is the code and dataset done using python.
+
+https://github.com/Zlimshit007/Aid-Worker-KIKA-Killed-Injured-Kidnapped-or-Arrested-Data/blob/zlimshitmain/aid-worker-kika-data.ipynb
+
+***
+## DATA ANALYSIS USING MySQL SERVER
+For my analysis phase, I created a database called global_terrorism on MySQL server. I imported my csv file which i re-write from python directly to MySQL server by creating a new schema in my connected server and naming it aid_workers_kika_df

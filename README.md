@@ -126,7 +126,7 @@ Data Analysis Quaries:
 - Retrieve the number of male aid workers killed, injured, Kidnapped, arrested or killed in captivity by weapon:
 - Retrieve the number of male aid workers killed, injured, Kidnapped, arrested or killed in captivity by year:
 
-you can find the solution here
+you can find the solution here:  https://github.com/Zlimshit007/Aid-Worker-KIKA-Killed-Injured-Kidnapped-or-Arrested-Data/blob/zlimshitmain/Mysql%20Aid%20workers%20Kika%20data%20quary
 
 
 

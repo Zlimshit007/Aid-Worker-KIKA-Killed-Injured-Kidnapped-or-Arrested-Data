@@ -61,12 +61,72 @@ The following tools were used for this project:
 - Power BI
 
 ***
-## PYTHON FOR EXPLORATORY DATA ANALYSIS (EDA), DATA CLEANING, AND SORTING
+# PYTHON FOR EXPLORATORY DATA ANALYSIS (EDA), DATA CLEANING, AND SORTING
 The dataset used for the analysis contained 929 rows × 45 columns. Exploratory Data Analysis (EDA) was done on the data to get a better understanding and insight of the dataset, We need to perform some data cleaning before we can start analyzing the dataset. This involves dropping irrelevant columns, renaming columns, handling missing values, and converting data types, the result was written back to a csv file named 'aid_workers_kika_df'.
 below is the code and dataset done using python.
 
 https://github.com/Zlimshit007/Aid-Worker-KIKA-Killed-Injured-Kidnapped-or-Arrested-Data/blob/zlimshitmain/aid-worker-kika-data.ipynb
 
 ***
-## DATA ANALYSIS USING MySQL SERVER
-For my analysis phase, I created a database called global_terrorism on MySQL server. I imported my csv file which i re-write from python directly to MySQL server by creating a new schema in my connected server and naming it aid_workers_kika_df
+# DATA ANALYSIS USING MySQL SERVER
+For my analysis phase, i connectted dataset to mysql using python and import the csv file into mysql and create a table?
+## Here are the steps i used in importing my dataset to mysql server.
+
+- I connected to MySQL using the mysql.connector module:
+
+![connector](https://user-images.githubusercontent.com/114537955/233411788-7085a2b9-475d-4b01-9a80-330057c974bd.png)
+
+- I created a new database for the aid_workers_kika.csv data:
+
+![connect 2](https://user-images.githubusercontent.com/114537955/233412813-97779844-99bc-45a3-80a6-597c567961b4.png)
+
+- I connected to the new database:
+
+![connect 3](https://user-images.githubusercontent.com/114537955/233413225-20319866-b388-4015-a3f6-1e92e40090d5.png)
+
+- I created a table with the desired columns:
+
+![connect 4](https://user-images.githubusercontent.com/114537955/233414168-84b9f899-8bd5-4845-85ef-352d4219e9d1.png)
+
+- I read the CSV file into a pandas dataframe:
+
+![connect 5](https://user-images.githubusercontent.com/114537955/233414695-af22a616-72ef-4b38-a447-1c9bd12e8d0e.png)
+
+- I used a loop to iterate over each row in the dataframe and insert into MySQL table
+
+![connect 6](https://user-images.githubusercontent.com/114537955/233415998-b7c8cf9c-5b23-41b8-8f4a-354da772231f.png)
+
+My dataset is then read and imported to mysql server
+After Importing the tables, I explored the data and asked several questions to gain more insight and knowledge from the data, detect patterns, and establish connections between different variables. The questions asked were:
+
+Data Analysis Quaries:
+
+- Retrieve the Number of incidents by country:
+- Retrieve the locations of the incidents:
+- Retrieve the actors of the incident:
+- Retrieve the weapons used:
+- Retrieve the organization mostly involved:
+- Retrieve the number of aid workers killed, injured, Kidnapped, arrested or killed in captivity by country:
+- Retrieve the number of aid workers killed, injured, Kidnapped, arrested or killed in captivity by organisation:
+- Retrieve the number of aid workers killed, injured, Kidnapped, arrested or killed in captivity by weapon:
+- Retrieve the number of aid workers killed, injured, Kidnapped, arrested or killed in captivity by year:
+- Retrieve the number of Int'l aid workers killed, injured, Kidnapped, arrested or killed in captivity by country:
+- Retrieve the number of Int'l aid workers killed, injured, Kidnapped, arrested or killed in captivity by organization:
+- Retrieve the number of Int'l aid workers killed, injured, Kidnapped, arrested or killed in captivity by weapon:
+- Retrieve the number of Int'l aid workers killed, injured, Kidnapped, arrested or killed in captivity by year:
+- Retrieve the number of Nat'l aid workers killed, injured, Kidnapped, arrested or killed in captivity by country:
+- Retrieve the number of Nat'l aid workers killed, injured, Kidnapped, arrested or killed in captivity by organization:
+- Retrieve the number of Nat'l aid workers killed, injured, Kidnapped, arrested or killed in captivity by weapon:
+- Retrieve the number of female aid workers killed, injured, Kidnapped, arrested or killed in captivity by country:
+- Retrieve the number of female aid workers killed, injured, Kidnapped, arrested or killed in captivity by organization:
+- Retrieve the number of female aid workers killed, injured, Kidnapped, arrested or killed in captivity by weapon:
+- Retrieve the number of female aid workers killed, injured, Kidnapped, arrested or killed in captivity by year:
+- Retrieve the number of male aid workers killed, injured, Kidnapped, arrested or killed in captivity by country:
+- Retrieve the number of male aid workers killed, injured, Kidnapped, arrested or killed in captivity by organization:
+- Retrieve the number of male aid workers killed, injured, Kidnapped, arrested or killed in captivity by weapon:
+- Retrieve the number of male aid workers killed, injured, Kidnapped, arrested or killed in captivity by year:
+
+you can find the solution here
+
+
+

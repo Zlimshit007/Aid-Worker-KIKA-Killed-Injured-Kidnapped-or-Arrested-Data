@@ -129,7 +129,9 @@ Data Analysis Queries:
 the Data Analysis Queries I did in the Mysql server can be found in the link:
  https://github.com/Zlimshit007/Aid-Worker-KIKA-Killed-Injured-Kidnapped-or-Arrested-Data/blob/zlimshitmain/Mysql%20Aid%20workers%20Kika%20data%20quary.md
 
-# DATA VISULIZATION
+
+***
+# DATA VISULIZATION USING MICROSOFT POWER BI
 
 After analyzing the data in the MySQL server, the dataset was imported into PowerBI to create visualizations to better understand the data and identify trends and patterns.
 Below is the link to view and understand the dataset using Power Bi

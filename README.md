@@ -99,7 +99,7 @@ For my analysis phase, i connectted dataset to mysql using python and import the
 My dataset is then read and imported to mysql server
 After Importing the tables, I explored the data and asked several questions to gain more insight and knowledge from the data, detect patterns, and establish connections between different variables. The questions asked were:
 
-Data Analysis Quaries:
+Data Analysis Queries:
 
 - Retrieve the Number of incidents by country:
 - Retrieve the locations of the incidents:

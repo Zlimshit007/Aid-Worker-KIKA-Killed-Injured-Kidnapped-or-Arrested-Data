@@ -82,7 +82,7 @@ For my analysis phase, i connectted dataset to mysql using python and import the
 
 - I connected to the new database:
 
-![connect 3](https://user-images.githubusercontent.com/114537955/233413225-20319866-b388-4015-a3f6-1e92e40090d5.png)
+![connect 3](https://user-images.githubusercontent.com/114537955/234837670-2d16c4b9-341d-4fdd-8334-beb6ca0bbd44.png)
 
 - I created a table with the desired columns:
 

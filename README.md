@@ -1,8 +1,7 @@
-# Aid Worker KIKA(Killed, Injured, Kidnapped, or Arrested) Data set
-This dataset contains agency- and publicly-reported data for events in which an aid worker was killed, injured, kidnapped, or arrested, Categorized by country.
+# Aid Worker KIKA(Killed, Injured, Kidnapped, or Arrested) 2020 - 2023 Dataset 
+This dataset contains agency- and publicly-reported data for events in which an aid worker was killed, injured, kidnapped, or arrested.
 # Methodology
-The Insecurity Insight data resource includes incidents where an aid worker was reportedly killed or injured by the use of violence (but not by illness or in an accident), kidnapped, or arrested for any reason (KIKA).
-It is compiled from two categories of sources:
+The Insecurity Insight data resource includes incidents where an aid worker was reportedly killed or injured by the use of violence (but not by illness or in an accident), kidnapped, or arrested for any reason (KIKA). It is compiled from two categories of sources:
 - verified security incidents submitted to Insecurity Insight by Aid in Danger partner agencies; and
 - open-source-reported incidents identified by Insecurity Insight and published in the Aid in Danger News Brief.
 
@@ -69,7 +68,7 @@ https://github.com/Zlimshit007/Aid-Worker-KIKA-Killed-Injured-Kidnapped-or-Arres
 
 ***
 # DATA ANALYSIS USING MySQL SERVER
-For my analysis phase, i connectted dataset to mysql using python and import the csv file into mysql and create a table?
+For my analysis phase, I connected the dataset to MySQL using Python and import the CSV file into the MySQL server.
 ## Here are the steps i used in importing my dataset to mysql server.
 
 - I connected to MySQL using the mysql.connector module:

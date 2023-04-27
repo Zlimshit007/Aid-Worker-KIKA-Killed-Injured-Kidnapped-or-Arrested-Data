@@ -63,7 +63,7 @@ The following tools were used for this project:
 ***
 # PYTHON FOR EXPLORATORY DATA ANALYSIS (EDA), DATA CLEANING, AND SORTING
 The dataset used for the analysis contained 929 rows × 45 columns. Exploratory Data Analysis (EDA) was done on the data to get a better understanding and insight of the dataset, We need to perform some data cleaning before we can start analyzing the dataset. This involves dropping irrelevant columns, renaming columns, handling missing values, and converting data types, the result was written back to a csv file named 'aid_workers_kika_df'.
-below is the code and dataset done using python.
+below is the link of the Exploratory Data Analysis (EDA) done using Python.
 
 https://github.com/Zlimshit007/Aid-Worker-KIKA-Killed-Injured-Kidnapped-or-Arrested-Data/blob/zlimshitmain/aid-worker-kika-data.ipynb
 
@@ -126,7 +126,11 @@ Data Analysis Queries:
 - Retrieve the number of male aid workers killed, injured, Kidnapped, arrested or killed in captivity by weapon:
 - Retrieve the number of male aid workers killed, injured, Kidnapped, arrested or killed in captivity by year:
 
-you can find the solution here:  https://github.com/Zlimshit007/Aid-Worker-KIKA-Killed-Injured-Kidnapped-or-Arrested-Data/blob/zlimshitmain/Mysql%20Aid%20workers%20Kika%20data%20quary
+the Data Analysis Queries I did in the Mysql server can be found in the link:
+ https://github.com/Zlimshit007/Aid-Worker-KIKA-Killed-Injured-Kidnapped-or-Arrested-Data/blob/zlimshitmain/Mysql%20Aid%20workers%20Kika%20data%20quary.md
 
+# DATA VISULIZATION
 
-
+After analyzing the data in the MySQL server, the dataset was imported into PowerBI to create visualizations to better understand the data and identify trends and patterns.
+Below is the link to view and understand the dataset using Power Bi
+https://github.com/Zlimshit007/Aid-Worker-KIKA-Killed-Injured-Kidnapped-or-Arrested-Data/blob/zlimshitmain/Data%20Visualization%20with%20Power%20Bi.md
